@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shapes</title>
+
+	<style>
+		body{ background-color: rgb(204,229, 255);
+
+		}
+
+		.triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 50px solid rgb(204, 153, 255);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 1;
+}
+.triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 50px solid rgb(204, 153, 255);
+	position: absolute;
+	top: 40%;
+	left: 40%;
+	z-index: 1;
+}
+
+		.triangle-up2 {
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 50px solid rgb(204, 153, 255);
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	z-index: 1;
+}
+.triangle-down2 {
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 50px solid rgb(204, 153, 255);
+	position: absolute;
+	top: 30%;
+	left: 30%;
+	z-index: 1;
+}
+
+
+		.triangle-up3 {
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 50px solid rgb(204, 153, 255);
+	position: absolute;
+	top: 60%;
+	left: 60%;
+	z-index: 1;
+}
+.triangle-down3 {
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 50px solid rgb(204, 153, 255);
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	z-index: 1;
+}
+
+.oval {
+  height: 50px;
+  width: 100px;
+  background-color: rgb(102, 178, 255);
+  border-radius: 50%;
+
+		position: absolute;
+	top: 50%;
+	left: 50%;
+	visibility: hidden;
+	z-index: 0;
+		opacity: 100%
+}
+.oval2 {
+  height: 50px;
+  width: 100px;
+  background-color: rgb(102, 178, 255);
+  border-radius: 50%;
+	position: absolute;
+	top: 40%;
+	left: 40%;
+	visibility: hidden;
+	z-index: 0;
+		opacity: 100%
+}
+.oval3 {
+	 height: 50px;
+  width: 100px;
+  background-color: rgb(102, 178, 255);
+  border-radius: 50%;
+  position: absolute;
+	top: 20%;
+	left: 20%;
+	visibility: hidden;
+	z-index: 0;
+		opacity: 100%
+}
+.oval4 {
+	 height: 50px;
+  width: 100px;
+  background-color: rgb(102, 178, 255);
+  border-radius: 50%;
+	position: absolute;
+	top: 30%;
+	left: 30%;
+	visibility: hidden;
+	z-index: 0;
+		opacity: 100%
+}
+.oval5 {
+	 height: 50px;
+  width: 100px;
+  background-color: rgb(102, 178, 255);
+  border-radius: 50%;
+	position: absolute;
+	top: 60%;
+	left: 60%;
+	visibility: hidden;
+	z-index: 0;
+		opacity: 100%
+}
+.oval6 {
+	 height: 50px;
+  width: 100px;
+  background-color: rgb(102, 178, 255);
+  border-radius: 50%;
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	visibility: hidden;
+	z-index: 0;
+		opacity: 100%
+}
+.square {
+ height: 50px;
+  width: 50px;
+  background-color: rgb(153,255,153);
+		position: absolute;
+	top: 50%;
+	left: 50%;
+	visibility: hidden;
+	z-index: 2;
+		opacity: 100%
+}
+.square2 {
+   height: 50px;
+  width: 50px;
+  background-color: rgb(153,255,153);
+	position: absolute;
+	top: 40%;
+	left: 40%;
+	visibility: hidden;
+	z-index: 2;
+		opacity: 100%
+}
+.square3 {
+	 height: 50px;
+  width: 50px;
+  background-color: rgb(153,255,153);
+  position: absolute;
+	top: 20%;
+	left: 20%;
+	visibility: hidden;
+	z-index: 2;
+		opacity: 100%
+}
+.square4 {
+ height: 50px;
+  width: 50px;
+ background-color: rgb(153,255,153);
+	position: absolute;
+	top: 30%;
+	left: 30%;
+	visibility: hidden;
+	z-index: 2;
+		opacity: 100%
+}
+.square5 {
+ height: 50px;
+  width: 50px;
+   background-color: rgb(153,255,153);
+   	position: absolute;
+	top: 60%;
+	left: 60%;
+	visibility: hidden;
+	z-index: 2;
+		opacity: 100%
+}
+.square6 {
+ height: 50px;
+  width: 50px;
+  background-color: rgb(153,255,153);
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	visibility: hidden;
+	z-index: 2;
+		opacity: 100%
+}
+@media only screen and (max-width: 940px){
+
+.oval{
+	visibility: visible;
+	background-color: rgb(178, 102, 255);
+		opacity: 5%
+		z-index: 0;
+}
+.oval2{
+	visibility: visible;
+	background-color: rgb(178, 102, 255);
+		opacity: 5%
+		z-index: 0;
+}
+.oval3{
+	visibility: visible;
+	background-color: rgb(178, 102, 255);
+		opacity: 5%
+		z-index: 0;
+}
+.oval4{
+	visibility: visible;
+	background-color: rgb(178, 102, 255);
+		opacity: 5%
+		z-index: 0;
+}
+.oval5{
+	visibility: visible;
+	background-color: rgb(178, 102, 255);
+		opacity: 5%
+		z-index: 0;
+}
+.oval6{
+	visibility: visible;
+	background-color: rgb(178, 102, 255);
+	opacity: 5%
+	z-index: 0;
+}
+body {
+	background-color: lightpink;
+}
+}
+@media only screen and (min-width: 1190px){
+	.square{
+	visibility: visible;
+	background-color: rgb(255, 153, 255);
+	opacity: 100%
+	z-index: 3;
+}
+	.square2{
+	visibility: visible;
+	background-color: rgb(255, 153, 255);
+	opacity: 100%
+	z-index: 3;
+}
+	.square3{
+	visibility: visible;
+	background-color: rgb(255, 153, 255);
+	opacity: 100%
+	z-index: 3;
+}
+  	.square4{
+	visibility: visible;
+	background-color: rgb(255, 153, 255);
+	opacity: 100%
+	z-index: 3;
+}
+	.square5{
+	visibility: visible;
+	background-color: rgb(255, 153, 255);
+	opacity: 100%
+	z-index: 3;
+}
+	.square6{
+	visibility: visible;
+	background-color: rgb(255, 153, 255);
+	opacity: 100%
+	z-index: 3;
+}
+body {
+	background-color: lightblue;
+}
+}
+	</style>
+</head>
+<body>
+
+	<div class="triangle-up"></div>
+	<div class="triangle-down"></div>
+	<div class="triangle-up2"></div>
+	<div class="triangle-down2"></div>
+	<div class="triangle-up3"></div>
+	<div class="triangle-down3"></div>
+<div class="oval"></div>
+<div class="oval2"></div>
+<div class="oval3"></div>
+	<div class="oval4"></div>
+	<div class="oval5"></div>
+	<div class="oval6"></div>
+
+</body>
+</html>
